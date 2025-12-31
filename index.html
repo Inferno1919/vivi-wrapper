@@ -1,9 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="UTF-8">
+<title>HBO Max Launcher</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<style>
+  body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: #0b0b0b;
+    color: #fff;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    text-align: center;
+    max-width: 420px;
+  }
+
+  h1 {
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    opacity: 0.8;
+  }
+
+  button {
+    margin-top: 1.5rem;
+    padding: 14px 22px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background: #7b61ff;
+    color: white;
+  }
+
+  button:hover {
+    background: #6a54e8;
+  }
+
+  small {
+    display: block;
+    margin-top: 1rem;
+    opacity: 0.6;
+  }
+</style>
 </head>
+
 <body>
-  <iframe id="frame" src="https://www.classteambuilding.com/hollidayroadwheel04876" frameborder="0" sandbox="allow-same-origin allow-scripts allow-forms allow-popups"></iframe>
+  <div class="container">
+    <h1>HBO Max</h1>
+    <p>Launch HBO Max in a clean viewing window</p>
+
+    <button onclick="launch()">Open HBO Max</button>
+
+    <small>
+      Tip: Press <strong>F11</strong> for fullscreen
+    </small>
+  </div>
+
+<script>
+function launch() {
+  window.open(
+    "https://www.max.com",
+    "_blank",
+    "noopener,noreferrer"
+  );
+}
+</script>
+
 </body>
 </html>
